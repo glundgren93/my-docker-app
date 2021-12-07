@@ -28,9 +28,9 @@ services:
       - db
   client:
     build: ./client/.
-    command: npm start
     volumes:
       - ./client/:/code/
+      - '/code/node_modules'
     ports:
       - "3000:3000"
     depends_on:

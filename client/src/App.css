@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .container {
   padding: 10px;
   display: flex;
@@ -30,4 +24,12 @@
   border-radius: 10px;
   padding: 12px 24px;
   font-size: 16px;
+}
+
+.disabled {
+  pointer-events: none;
+
+  /* for "disabled" effect */
+  opacity: 0.5;
+  background: #ccc;
 }

@@ -32,12 +32,10 @@ function Todo({ todo }) {
   };
 
   return (
-    <div className="content">
+    <div className={`content ${todoContent.isFinished ? "disabled" : ""}`}>
       <h2>{todoContent.title}</h2>
 
-      <button onClick={() => handleClick()}>
-        {!todoContent.isFinished ? "Complete" : "Not complete"}
-      </button>
+      <button onClick={() => handleClick()}>✔</button>
     </div>
   );
 }
